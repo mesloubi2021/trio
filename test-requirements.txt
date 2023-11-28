@@ -27,7 +27,7 @@ click==7.1.2
     # via black
 coverage==5.4
     # via pytest-cov
-cryptography==3.3.1
+cryptography==41.0.6
     # via
     #   pyopenssl
     #   trustme
@@ -43,10 +43,10 @@ immutables==0.14
     # via -r test-requirements.in
 iniconfig==1.1.1
     # via pytest
-ipython-genutils==0.2.0
-    # via traitlets
 ipython==7.20.0
     # via -r test-requirements.in
+ipython-genutils==0.2.0
+    # via traitlets
 isort==5.7.0
     # via pylint
 jedi==0.18.0
@@ -59,13 +59,13 @@ mccabe==0.6.1
     # via
     #   flake8
     #   pylint
+mypy==0.800 ; implementation_name == "cpython"
+    # via -r test-requirements.in
 mypy-extensions==0.4.3 ; implementation_name == "cpython"
     # via
     #   -r test-requirements.in
     #   black
     #   mypy
-mypy==0.800 ; implementation_name == "cpython"
-    # via -r test-requirements.in
 outcome==1.1.0
     # via -r test-requirements.in
 packaging==20.9
@@ -100,18 +100,17 @@ pyopenssl==20.0.1
     # via -r test-requirements.in
 pyparsing==2.4.7
     # via packaging
-pytest-cov==2.11.1
-    # via -r test-requirements.in
 pytest==6.1.2
     # via
     #   -r test-requirements.in
     #   pytest-cov
+pytest-cov==2.11.1
+    # via -r test-requirements.in
 regex==2020.11.13
     # via black
 six==1.15.0
     # via
     #   astroid
-    #   cryptography
     #   pyopenssl
 sniffio==1.2.0
     # via -r test-requirements.in
